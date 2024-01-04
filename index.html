@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&displey=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="difficultyForm">
+        <label for="difficulty">Selecciona la dificultad:</label>
+        <select id="difficulty" name="difficulty">
+            <option value="easy">Fácil</option>
+            <option value="medium" selected>Medio</option>
+            <option value="hard">Difícil</option>
+        </select>
+        <button type="button" onclick="startGame()">Iniciar Juego</button>
+    </form>
+
+    <div id="board"><div></div></div>
+    <div class="boardInfo">
+        <div>
+            Score: <div id="scoreBoard"></div>
+        </div>
+        <button id="start">Start</button>
+    </div>
+    <div id="gameOver">Game Over</div>
+</body>
+
+</html>
